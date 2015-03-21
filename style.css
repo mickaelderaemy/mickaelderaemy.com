@@ -1,0 +1,65 @@
+/* Optional theme */
+@import url('//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css');
+
+
+body {
+	margin: 0px;
+}
+
+.navbar-right {
+	margin-right: 50px;
+}
+
+nav {
+	font-family: "Raleway", sans-serif;
+	letter-spacing: 1px;
+}
+
+header {
+	background-image: url('images/header_background2.png');
+	width: 100%;
+	height: 100%;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.header_title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	line-height: 50px;
+}
+
+.header_initials {
+	font-size: 100px;
+}
+
+.header_description {
+	font-size: 50px;
+	font-weight: 100;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+
+.header_title h1 {
+	font-size: 30px;
+	font-weight: 100;
+}
+
+/* Sections */
+
+.section_title h3 {
+	text-align: center;
+	font-size: 14px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.section_img img {
+	width: 200px;
+	height: auto;
+}
+
