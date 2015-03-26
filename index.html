@@ -2,12 +2,12 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300,200' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-	<link rel=stylesheet href="style.css" type="text/css">
+	<link rel=stylesheet href="css/style.css" type="text/css">
 	<title>Mickaël de Raëmy | Développeur web front & back end</title>
 </head>
 <body>
@@ -29,14 +29,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navigationbar">
       <ul class="nav navbar-nav">
-        <li><a href="file:///Users/mickaelderaemy/Desktop/mickaelderaemy_site/index.html">Accueil</a></li>
+        <li><a href="/">Accueil</a></li>
         <li><a href="#experiences">Expériences</a></li>
         <li><a href="#competences">Compétences</a></li>
-        <li><a href="#">Études</a></li>
-        <li><a href="#">Loisirs</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -49,12 +47,25 @@
 	<!-- H E A D E R -->
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12 header header_title">
+		<div class="col-md-12 hidden-xs header header_title">
 			<img class="hidden-xs" src="images/header_line.png">
-			<span class="header_name">Mickaël de Raëmy</span>
+			<span class="header_name">Hello</span>
 			<img class="hidden-xs" src="images/header_line.png">
 			<img class="visible-xs-* hidden-sm hidden-md hidden-lg" src="images/header_line.png">
-			<h1>Développeur web, front &amp; back end à Chartres</h1>
+			<h1>Je m'appelle Mickaël de Raëmy</h1>
+			<h1>Et je fabrique des sites internet</h1>
+			<img class="visible-xs-* hidden-sm hidden-md hidden-lg" src="images/header_line.png">
+			<img class="hidden-xs" src="images/header_line3.png">
+		</div>
+		<div class="visible-xs-* hidden-sm hidden-md hidden-lg header header_title">
+			<img class="hidden-xs" src="images/header_line.png">
+			<span class="header_name">Hello</span>
+			<img class="hidden-xs" src="images/header_line.png">
+			<img class="visible-xs-* hidden-sm hidden-md hidden-lg" src="images/header_line.png">
+			<p class="header_title_xs">Je m'appelle</p>
+			<p class="header_title_xs">Mickaël de Raëmy</p>
+			<p class="header_title_xs">Et je fabrique</p>
+			<p class="header_title_xs">des sites internet</p>
 			<img class="visible-xs-* hidden-sm hidden-md hidden-lg" src="images/header_line.png">
 			<img class="hidden-xs" src="images/header_line3.png">
 		</div>
@@ -66,13 +77,13 @@
 <!-- Expériences -->
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12 section_title" id="experiences">
+		<div class="col-md-12 section_title page-scroll" id="experiences">
 			<h3>Expériences</h3>
 			<div class="separationstiretscouleurs"></div>
-			<div class="col-md-2 col-md-offset-2 section_img">
+			<div class="col-xs-8 col-xs-offset-2 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-2 section_img">
 				<img src="images/logo_wcs.png">
 			</div>
-			<div class="col-md-6">
+			<div class="col-xs-12 col-sm-7 col-sm-offset-1 col-md-7 col-md-offset-0">
 				<p class="title_section_small">Développeur web en formation</p>
 				<p class="title_section_small_description">Wild Code School (La Loupe) | 10/2014 - 04/2015</p>
 				<p class="description_experiences">Cette formation m'a permis de découvrir la programmation avec les langages Ruby (framework Ruby On Rails) et Php (framework Symfony 2) mais aussi de me perfectionner en HTML et CSS avec la découverte de Bootstrap. Tous les travaux ont été réalisés en groupe en utilisant des méthodes de gestion de projets (Scrum, Kanban) mais aussi à l'aide d'outils de versionning comme Git.</p>
@@ -85,10 +96,10 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-2 col-md-offset-2 section_img">
+		<div class="col-xs-8 col-xs-offset-2 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-2 section_img">
 			<img src="images/logo_seoh.png">
 		</div>
-		<div class="col-md-6">
+		<div class="col-xs-12 col-sm-7 col-sm-offset-1 col-md-7 col-md-offset-0">
 			<p class="title_section_small">Chef de projet SEO</p>
 			<p class="title_section_small_description">Seoh (Montrouge) | 03/2013 - 04/2014</p>
 			<p class="description_experiences">Pendant une année, j'ai accompagné des entreprises dans l'optimisation de leur SEO(Search Engine Optimisation) afin d'augmenter leur visibilité en ligne. Cette expérience m'a permis de consolider mes acquis en référencement naturel à l'aide de cas pratiques et d'un portefeuille client diversifié.</p>
@@ -97,15 +108,84 @@
 
 
 	<!-- Compétences -->
-	<div class="row">
-		<div class="col-md-12 section_title" id="competences">
-			<h3>Compétences</h3>
-			<div class="separationstiretscouleurs"></div>
+	<div class="container-fluid competences">
+		<div class="row">
+			<div class="col-md-12 section_title page-scroll" id="competences">
+				<h3>Compétences</h3>
+				<div class="separationstiretscouleurs"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-2">
+				<img class="competences_logo" src="images/logo_html_gris.png">
+				<img class="competences_logo" src="images/logo_css_gris.png">
+				<img class="competences_logo" src="images/logo_bootstrap_gris.png">
+				<img class="competences_logo" src="images/logo_wordpress_gris.png">
+			</div>
+			<div class="col-md-4 col-md-offset-1">
+				<img class="competences_logo" src="images/logo_ruby_gris.png">
+				<img class="competences_logo" src="images/logo_rails_gris.png">
+				<img class="competences_logo" src="images/logo_php_gris.png">
+				<img class="competences_logo" src="images/logo_symfony_gris.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-5 col-md-offset-1">
+				<br>
+				<p class="title_small_competences">Front End</p>
+				<p>Je parle couramment <strong>HTML, CSS, Bootstrap</strong> ou encore <strong>Wordpress</strong>. Avec ce beau monde, je mets en avant l'information sur les sites internet. Je peux ainsi développer et intégrer des maquettes tout en vous conseillant sur les choix visuels réalisés.</p>
+			</div>
+			<div class="col-md-5">
+				<br>
+				<p class="title_small_competences">Back End</p>
+				<p class="description_experiences">Pendant une année, j'ai accompagné des entreprises dans l'optimisation de leur SEO(Search Engine Optimisation) afin d'augmenter leur visibilité en ligne. Cette expérience m'a permis de consolider mes acquis en référencement naturel à l'aide de cas pratiques et d'un portefeuille client diversifié.</p>
+			</div>
 		</div>
 	</div>
+
+	<!-- Contact -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 section_title page-scroll" id="contact">
+				<h3>Contact</h3>
+				<div class="separationstiretscouleurs"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 contact">
+				<p class="contact_title">Email : mickaëlderaemy@gmail.com</p>
+				<p class="contact_title">Téléphone : 06.69.34.63.95</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 footer">
+				<p class="footer_content_thx">Merci</p>
+				<p class="footer_content">de votre visite</p>
+			</div>
+		</div>
+	</div>
+
 </div>
 
-</body>
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+	<script>
+	$(document).on('click',function(){
+	$('.collapse').collapse('hide');
+	})
+	</script> 
+</body>
 
 </html> 
